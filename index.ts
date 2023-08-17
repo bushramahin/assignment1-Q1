@@ -295,8 +295,7 @@ if(alien_color == "green"){
 else{
     console.log(" player just earned 10 points");
 }
-let color = "Yellow";
-if(color == "green"){
+if(alien_color == "green"){
     console.log("player just earned 5 points");
 }
 else{
@@ -364,3 +363,58 @@ for (let index = 0; index < persons.length; index++) {
     }
     
 }
+// Task 31
+persons.length = 0
+if(persons.length == 0){
+    console.log("We need to find users!");
+    
+}
+else{
+    console.log("We do not need to find some users!");
+    
+}
+// Task 32
+let current_users = ["Bushra Mahin" , "Kainat" , "Alex" , "Bard" , "Abdullah"]
+let new_users = ["Fahama" , "Eric" , "Kainat" , "Alex" , "Mudabbir"]
+for (const newUser of new_users) {
+    if (current_users.includes(newUser)) {
+      console.log(`The username ${newUser} is already taken.`);
+    } else {
+      console.log(`The username ${newUser} is available.`);
+    }
+  }
+ // Task 33
+let simple_number = [1,2,3,4,5,6,7,8,9]
+let ordinal_numbers = []
+for (let i = 0 ; i<simple_number.length ; i++){
+    if(simple_number[i] == 1){
+        ordinal_numbers.push(simple_number[i]+'st') 
+    }
+    else if(simple_number[i] == 2){
+        ordinal_numbers.push(simple_number[i]+'nd')
+    }
+    else if(simple_number[i] == 3){
+        ordinal_numbers.push(simple_number[i]+'rd')
+    }
+    else{
+        ordinal_numbers.push(simple_number[i]+'th')
+    }
+}
+console.log(ordinal_numbers.join("\n"));
+// Task 34
+let pizzas = ["Peproni" , "BBQ" , "Cheese lover" , "Creamy tikka"]
+for (let i =0 ; i < pizzas.length; i++){
+    console.log(`${pizzas[i]} i like sooo much`);
+    
+}
+console.log(`Pizzas are yummy than any other meal\ntheir cheese chicken flavours are so yummy\ni think not me but everyne like it\ni really love pizza!`);
+// Task 35
+const animals = ["dog", "cat", "fish"];
+
+for (const animal of animals) {
+  console.log(`A ${animal} would make a great pet!`)
+}
+
+console.log("Any of these animals would make a great pet!")
+
+
