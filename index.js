@@ -385,3 +385,51 @@ for (const animal of animals) {
     console.log(`A ${animal} would make a great pet!`);
 }
 console.log("Any of these animals would make a great pet!");
+// Task 36
+let make_shirt = (size, message) => {
+    console.log(`Size of your T-shirt is \"${size}\" and message you want to print on your shirt is \"${message}\"`);
+};
+make_shirt("Large", "I love my Family");
+// Task 37
+function T_shirt(size, message) {
+    if (size == "Large" || size == "Medium") {
+        console.log(`Size of your shirt is \"${size}\" and message is \"I love typescript\"`);
+    }
+    else {
+        console.log(`Size of your shirt is \"${size}\" and message is \"${message}\"`);
+    }
+}
+T_shirt("Small", "Nothing");
+T_shirt("Medium", 'nanananana');
+// Task 38
+function describe_city(city, country = "Pakistan") {
+    console.log(`${city} is in ${country}`);
+}
+describe_city("Lahore");
+describe_city("Tokyo", "Japan");
+// Task 39
+let city_country = (city, country) => {
+    console.log(`\"${city},${country}\"`);
+};
+city_country("Lahore", "Pakistan");
+city_country("Islamabad", "Pakistan");
+// Task 40
+function make_album(artist, album_title, number_of_track) {
+    let album = {
+        artist_name: artist,
+        album_title: album_title,
+        numberOfTracks: number_of_track
+    };
+    console.log(album);
+}
+make_album("The Beatles", "Rubber Soul");
+make_album("Pink Floyd", "The Dark Side of the Moon", 13);
+make_album("Metallica", "Master of Puppets", 9);
+// Task 41
+let magician_array = ["David Copperfield", "Harry Houdini", "David Blaine"];
+let Show_magician = (name) => {
+    for (const magician of name) {
+        console.log(magician);
+    }
+};
+Show_magician(magician_array);
