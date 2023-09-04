@@ -464,3 +464,44 @@ let Show_magician = (name : string[]) => {
    } 
 }
 Show_magician(magician_array)
+// Task 42
+let make_great = (array : String[])=>{
+    let new_arr = [];
+    for(let i = 0 ; i < array.length ; i++){
+        new_arr.push(`${array[i]} is great magician`)     
+    }
+    return new_arr
+}
+let res = make_great(magician_array)
+// Task 43
+console.log( "great magicians array",res);
+console.log("original array",magician_array);
+//  Task 44
+function Sandwhich_order (order : string[]){
+    console.log("Your sandwhich will have following items");
+    for (let i = 0 ; i < order.length;i++){
+        console.log([i] +"."+order[i]);
+        
+    }
+    
+}
+Sandwhich_order(["ham", "cheese", "lettuce"]);
+Sandwhich_order(["turkey", "tomato", "onion", "peproni"]);
+Sandwhich_order(["roast beef", "cucumber", "pickle"]);
+// Task 45
+type Car = {
+    manufacturer_name : string;
+    model_name : string;
+    [key:string]:any
+}
+let car : Car = {
+    manufacturer_name : "Tesla",
+    model_name : "Model 3",
+    Color : "red",
+    year : 2023
+}
+let car_info = (obj:object)=>{
+    return obj
+}
+let result = car_info(car)
+console.log(result);
