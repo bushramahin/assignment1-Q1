@@ -9,12 +9,13 @@ console.log(message);
 // Bushra Mahin 7/14/2023 This program shows my name in uppercase lowercase and title case
 console.log(person.toUpperCase());
 console.log(person.toLowerCase());
-function titlecase(str : any){
-    str = str.toLowerCase().split(" ");
+
+function titlecase(str : string){
+    let strArray : string[] = str.toLowerCase().split(" ");
     for (let i = 0 ; i < str.length ; i++){
-        str[i] = str[i].charAt(0).toUpperCase()+str[i].slice(1)
+        strArray[i] = str[i].charAt(0).toUpperCase()+str[i].slice(1)
     }
-    return str.join(' ');
+    return strArray.join(' ');
 }
 console.log(titlecase(person));
 // Task 4
@@ -153,7 +154,7 @@ let my_favourites = {
      "Rivers" : ["Ravi" , "Sindh" , "Stluj"],
      "Cities" :["Lahore" , "Karachi" , "islamabad"],
       "Countries" : ["Pakistan" , "UK" , "Canada"]
-}
+    }
 console.log(my_favourites);
 // Task 21
 console.log(my_favourites.Cities);
@@ -453,7 +454,7 @@ function make_album(artist:string , album_title : string,number_of_track ?: numb
     }
     console.log(album); 
 }
-make_album("The Beatles", "Rubber Soul");
+make_album("The Beatles", "Rubber Soul" , undefined);
 make_album("Pink Floyd", "The Dark Side of the Moon", 13);
 make_album("Metallica", "Master of Puppets", 9);
 // Task 41
